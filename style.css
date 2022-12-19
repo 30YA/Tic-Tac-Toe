@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body,
+html {
+  height: 100%;
+}
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title span {
+  color: #3bbed6;
+}
+header {
+  margin: 40px 0;
+}
+.cells {
+  margin: 30px 0;
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+}
+.cell {
+  /* background-color: rgb(189, 189, 189); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(4),
+.cell:nth-child(5) {
+  border: 1px solid gray;
+  border-top: transparent;
+  border-left: transparent;
+}
+.cell:nth-child(3),
+.cell:nth-child(6) {
+  border-bottom: 1px solid gray;
+}
+.cell:nth-child(7),
+.cell:nth-child(8) {
+  border-right: 1px solid gray;
+}
+img {
+  width: 100%;
+}
+.users-turn {
+  margin: 30px 0;
+}
+.reset {
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #fd0266; /*3BBED6*/
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: #c6004f;
+}
