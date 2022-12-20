@@ -38,7 +38,7 @@ main {
   color: #3bbed6;
 }
 header {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 .cells {
   margin: 30px 0;
@@ -47,8 +47,16 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 150px);
 }
+@media screen and (max-width: 490px) {
+  main {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .cells {
+    width: 100%;
+  }
+}
 .cell {
-  /* background-color: rgb(189, 189, 189); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +89,11 @@ img {
   padding: 10px 30px;
   font-size: 18px;
   border: none;
-  background-color: #fd0266; /*3BBED6*/
+  background-color: #fd0266;
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .reset:hover {
   background-color: #c6004f;
